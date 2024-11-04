@@ -1,0 +1,54 @@
+{
+    "name": "ROS Humble Development Container",
+    "privileged": true,
+    "remoteUser": "ros-student",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USERNAME": "ros-student"
+        }
+    },
+    "workspaceFolder": "/home/ros-student/ros2_ws",
+    "workspaceMount": "source=${localWorkspaceFolder}/src,target=/home/ros-student/ros2_ws/src,type=bind",
+    "customizations": {
+        "vscode": {
+            "extensions":[
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-themes",
+                "twxs.cmake",
+                "donjayamanne.python-extension-pack",
+                "eamodio.gitlens",
+                "ms-iot.vscode-ros",
+                "ms-python.python",
+                "smilerobotics.urdf"
+            ],
+            "settings": {
+            	"terminal.integrated.shell.linux": "/bin/bash",
+                "python.analysis.extraPaths": [
+                    "/opt/ros/humble/lib/python3/dist-packages",
+                   // "/home/ros-student/ros2_ws/devel/lib/python3/dist-packages"
+                ],
+                "python.autoComplete.extraPaths": [
+                    "/opt/ros/humble/lib/python3/dist-packages",
+                   // "/home/ros-student/ros2_ws/devel/lib/python3/dist-packages"
+                ]
+            }
+        }
+    },
+    "containerEnv": {
+        "DISPLAY": "unix:0",
+        "ROS_LOCALHOST_ONLY": "1",
+        "ROS_DOMAIN_ID": "42"
+      },
+    "runArgs": [
+        "--net=host",
+        "--pid=host",
+        "--ipc=host",
+        "-e", "DISPLAY=${env:DISPLAY}"
+    ],
+    "mounts": [
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
+        "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached",
+    ],
+    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ros-student/ros2_ws/"
+}
