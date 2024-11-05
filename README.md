@@ -2,6 +2,10 @@
 
 ## Windows
 
+> :exclamation: **Note** :exclamation:
+> 
+> Docker on Windows host OS **does not support** access to USB devices like **cameras**. 
+
 ### Installation
 
 1. &nbsp; Download XLaunch Server from https://sourceforge.net/projects/vcxsrv/ and install.
