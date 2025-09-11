@@ -12,11 +12,11 @@
 2. &nbsp; Download Docker Desktop from https://docs.docker.com/desktop/install/windows-install/ and install.
 3. &nbsp; Download Visual Studio Code from https://code.visualstudio.com/download and install.
 4. &nbsp; Open VS Code and install an extension (shortcut CTRL+SHIFT+X) with the name "Remote Development".
-5. &nbsp; Download [repository](https://github.com/BartlomiejKulecki/ros2_ws_template/tree/Windows):\
+5. &nbsp; Download [repository](https://github.com/BartlomiejKulecki/ros2_ws_template/tree/Windows-jazzy):\
   a) &nbsp; in web browser:\
-     &nbsp; &nbsp; &nbsp; change branch to Windows, click a button `Code --> Download ZIP`, unzip,\
+     &nbsp; &nbsp; &nbsp; change branch to Windows-jazzy, click a button `Code --> Download ZIP`, unzip,\
   b) &nbsp; or in the Command Window:\
-     &nbsp; &nbsp; &nbsp; use command: &nbsp; `git clone https://github.com/BartlomiejKulecki/ros2_ws_template.git -b Windows`
+     &nbsp; &nbsp; &nbsp; use command: &nbsp; `git clone https://github.com/BartlomiejKulecki/ros2_ws_template.git -b Windows-jazzy`
 
 
 ### Setup ROS in Docker
