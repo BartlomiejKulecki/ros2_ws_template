@@ -9,11 +9,11 @@
    &nbsp; https://docs.docker.com/engine/install/linux-postinstall/
 3. &nbsp; Download and install Visual Studio Code with command: &nbsp; `sudo apt-get install code`
 4. &nbsp; Open VS Code and install an extension (shortcut CTRL+SHIFT+X) with the name "Remote Development".
-5. &nbsp; Download [repository](https://github.com/BartlomiejKulecki/ros2_ws_template/tree/Ubuntu):\
+5. &nbsp; Download [repository](https://github.com/BartlomiejKulecki/ros2_ws_template/tree/Ubuntu-jazzy):\
   a) &nbsp; in web browser:\
-     &nbsp; &nbsp; &nbsp; change branch to Ubuntu, click a button `Code --> Download ZIP`, unzip,\
+     &nbsp; &nbsp; &nbsp; change branch to Ubuntu-jazzy, click a button `Code --> Download ZIP`, unzip,\
   b) &nbsp; or in the Terminal:\
-     &nbsp; &nbsp; &nbsp; use command: &nbsp; `git clone https://github.com/BartlomiejKulecki/ros2_ws_template.git -b Ubuntu`
+     &nbsp; &nbsp; &nbsp; use command: &nbsp; `git clone https://github.com/BartlomiejKulecki/ros2_ws_template.git -b Ubuntu-jazzy`
 
 
 ### Setup ROS in Docker
