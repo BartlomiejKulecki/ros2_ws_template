@@ -12,8 +12,8 @@
 5. &nbsp; Download [repository](https://github.com/BartlomiejKulecki/ros2_ws_template/tree/Ubuntu-jazzy):\
   a) &nbsp; in web browser:\
      &nbsp; &nbsp; &nbsp; change branch to Ubuntu-jazzy, click a button `Code --> Download ZIP`, unzip,\
-  b) &nbsp; or in the Terminal:\
-     &nbsp; &nbsp; &nbsp; use command: &nbsp; `git clone https://github.com/BartlomiejKulecki/ros2_ws_template.git -b Ubuntu-jazzy`
+  b) &nbsp; or in the Terminal, use command:\
+     &nbsp; &nbsp; &nbsp; `git clone https://github.com/BartlomiejKulecki/ros2_ws_template.git -b Ubuntu-jazzy`
 
 
 ### Setup ROS in Docker
