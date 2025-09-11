@@ -1,4 +1,4 @@
-FROM osrf/ros:humble-desktop-full
+FROM osrf/ros:jazzy-desktop-full
 ARG USERNAME=ros-student
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
