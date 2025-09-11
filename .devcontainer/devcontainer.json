@@ -1,5 +1,5 @@
 {
-    "name": "ROS Humble Development Container",
+    "name": "ROS Jazzy Development Container",
     "privileged": true,
     "remoteUser": "ros-student",
     "build": {
@@ -25,11 +25,11 @@
             "settings": {
             	"terminal.integrated.shell.linux": "/bin/bash",
                 "python.analysis.extraPaths": [
-                    "/opt/ros/humble/lib/python3/dist-packages",
+                    "/opt/ros/jazzy/lib/python3/dist-packages",
                    // "/home/ros-student/ros2_ws/devel/lib/python3/dist-packages"
                 ],
                 "python.autoComplete.extraPaths": [
-                    "/opt/ros/humble/lib/python3/dist-packages",
+                    "/opt/ros/jazzy/lib/python3/dist-packages",
                    // "/home/ros-student/ros2_ws/devel/lib/python3/dist-packages"
                 ]
             }
