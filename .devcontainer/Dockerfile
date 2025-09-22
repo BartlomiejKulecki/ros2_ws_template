@@ -3,6 +3,7 @@ ARG USERNAME=ros-student
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
+ENV SHELL /bin/bash
 
 # Create the user
 RUN groupadd --gid $USER_GID $USERNAME \
@@ -18,16 +19,16 @@ RUN groupadd --gid $USER_GID $USERNAME \
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3-pip
-ENV SHELL /bin/bash
+
 
 RUN pip3 install --upgrade pip
-
-RUN apt-get install -y --allow-unauthenticated python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential git
+RUN apt-get install -y --allow-unauthenticated build-essential git python3-pip python3-setuptools python3-wheel python3-rosdep
 
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
+WORKDIR /home/$USERNAME
 USER $USERNAME
 CMD ["/bin/bash"]
