@@ -19,8 +19,9 @@
 ### Setup ROS in Docker
 
 1. &nbsp; Run Docker Engine with command `sudo systemctl start docker` (may not be necessary).
-2. &nbsp; Run VS Code and open a directory `ros2_ws_template`
-3. &nbsp; Click F1 and type "Dev Containers: Rebuild and Reopen in Container" click Enter.
-4. &nbsp; Wait for the installation to complete. The first time you run it, you may need to wait a little longer for the necessary software to download and install.
-5. &nbsp; After all, open the terminal in VS Code and enjoy ROS 2!
+2. &nbsp; To enable using **GUI** from the container type a command **`xhost +`**
+3. &nbsp; Run VS Code and open a directory `ros2_ws_template`
+4. &nbsp; Click F1 and type "Dev Containers: Rebuild and Reopen in Container" click Enter.
+5. &nbsp; Wait for the installation to complete. The first time you run it, you may need to wait a little longer for the necessary software to download and install.
+6. &nbsp; After all, open the terminal in VS Code and enjoy ROS 2!
 
