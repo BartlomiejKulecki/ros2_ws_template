@@ -1,5 +1,5 @@
 FROM osrf/ros:humble-desktop-full
-ARG USERNAME=ros-student
+ARG USERNAME=ros-user
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
